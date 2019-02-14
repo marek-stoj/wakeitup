@@ -44,6 +44,29 @@
 
         <div style="text-align: center;">
           <iframe width="640" height="360" src="https://www.youtube.com/embed/-QdgoBYUHBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+          
+          <div id="youtube-player" data-video="U9XP96PW6us" data-startseconds="0" data-endseconds="67" data-width="640" data-height="480">
+          </div> 
+          
+          <script src="https://www.youtube.com/iframe_api"></script>
+          <script type="text/javascript">
+            function onYouTubeIframeAPIReady() {
+              var ctrlq = document.getElementById("youtube-player");
+              var player = new YT.Player('youtube-player', {
+                height: ctrlq.dataset.height,
+                width: ctrlq.dataset.width,
+                events: {
+                  'onReady': function(e) {
+                    e.target.cueVideoById({ 
+                      videoId: ctrlq.dataset.video,
+                      startSeconds: ctrlq.dataset.startseconds,
+                      endSeconds: ctrlq.dataset.endseconds
+                    });
+                  }
+                } 
+              }); 
+            } 
+          </script>
         </div>
       
         <hr />
