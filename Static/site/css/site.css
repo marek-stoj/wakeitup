@@ -1,0 +1,131 @@
+﻿.accent-color {
+  color: #C42329 !important;
+}
+
+#mainNav .navbar-brand {
+  text-transform: none;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  color: initial;
+}
+
+#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+  color: initial;
+}
+
+#top-logo-light {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #top-logo-light {
+    display: initial;
+  }
+  
+  #top-logo-dark {
+    display: none;
+  }
+
+  #mainNav.navbar-shrink #top-logo-light {
+    display: none;
+  }
+
+  #mainNav.navbar-shrink #top-logo-dark {
+    display: initial;
+  }
+}
+
+.article-container .article-authors {
+  font-style: italic;
+}
+
+.flag-link {
+  display: inline-block;
+  padding-top: 6px;
+}
+
+.flag-link:hover {
+  text-decoration: none;
+}
+
+section#contact ul.list-social li.social-facebook a {
+  background-color: #3b5998;
+}
+
+section#contact ul.list-social li.social-twitter a {
+  background-color: #0084b4;
+}
+
+section#contact ul.list-social li a {
+  font-size: 40px;
+  line-height: 80px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.embedded-video-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/*
+  BEGIN: TEAM
+*/
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center; }
+  .team-member img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid white; }
+  .team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none; }
+  .team-member p {
+    margin-top: 0; }
+
+ul.social-buttons-team {
+  margin-bottom: 0; }
+  ul.social-buttons-team li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #222222; }
+    ul.social-buttons-team li a:active, ul.social-buttons-team li a:focus, ul.social-buttons-team li a:hover {
+      background-color: #C42329; }
+
+ul.social-buttons-page li a {
+  display: block;
+  width: 75px;
+  height: 75px;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 38px;
+  line-height: 75px;
+}
+
+ul.social-buttons-page li.social-twitter a {
+  background-color: #1da1f2;
+}
+
+ul.social-buttons-page li.social-facebook a {
+  background-color: #3b5998;
+}
+
+/*
+  END: TEAM
+*/
